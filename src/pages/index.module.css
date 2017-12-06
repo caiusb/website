@@ -1,0 +1,10 @@
+.avatar {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 250px;
+  float: left;
+}
+
+.active {
+  color: 'blue';
+}
