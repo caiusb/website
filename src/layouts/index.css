@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  font-family: serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -621,9 +621,4 @@ pre tt:after {
   html {
     font-size: 100%;
   }
-}
-
-.fa {
-  vertical-align: middle;
-  height: 62px;
 }

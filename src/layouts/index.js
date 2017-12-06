@@ -23,22 +23,15 @@ const typography = new Typography({
 
 const ExternalListLink = props =>
   <li style={{
-    padding: '0 auto',
-    margin: '0 auto',
     display: 'inline-block',
-    marginRight: `0.5rem`,
-    verticalAlign: 'middle'
+    marginRight: '6pt',
+    marginBottom: '0pt'
   }}>
     <a href={props.to}
       style={{
-        // padding: '0 auto',
-        // margin: '0 auto',
         color: 'inherit',
-        fontSize: '1.5rem',
-        verticalAlign : 'middle',
+        fontSize: '22pt',
         textDecoration: 'none',
-        float: 'right',
-        height: '62px'
       }}
     >
       {props.children}
@@ -56,7 +49,7 @@ const InternalListLink = props =>
     <Link to={props.to}
       style={{
         color: 'inherit',
-        fontSize: '1.25rem',
+        fontSize: '16pt',
         verticalAlign : 'middle',
         textDecoration: 'none',
         float: 'left'
@@ -76,7 +69,9 @@ const Header = () => (
       style={{
         margin: '0 auto',
         maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
+        paddingLeft: '1.0875rem',
+        paddingTop: '1.45rem',
+        paddingBotton: '0.5rem'
       }}
     >
       <h1 style={{ margin: 0, display: 'inline' }}>
@@ -90,34 +85,23 @@ const Header = () => (
           Caius Brindescu
         </Link>
       </h1>
-    </div>
-    <div style={{
-      maxWidth: '960px',
-      verticalAlign: 'middle',
-      margin: '0 auto'
-      // lineHeight: '1.25rem'
-    }}>
       <ul style={{
-        margin: '0 auto',
-        padding: '0 auto',
+        // margin: '0 auto',
+        // padding: '0 auto',
         verticalAlign: 'middle',
-        display: 'inline-block'
+        display: 'inline-block',
+        float: 'right'
       }}>
         <InternalListLink to="research.html">Research</InternalListLink>
         <InternalListLink to="projects.html">Projects</InternalListLink>
         <InternalListLink to="cycling.html">Cycling</InternalListLink>
         <InternalListLink to="blog.html">Blog</InternalListLink>
       </ul>
+    </div>
+    <div style={{maxWidth: '960px', marginLeft: 'auto', marginRight: 'auto'}}>
       <ul style={{
-        margin: '0 auto',
-        padding: '0 auto',
         listStyle: 'none',
-        float: 'right',
-        align: 'center',
-        baseLineHeight: 'inherit',
-        verticalAlign: 'middle',
-        dislay: 'inline-block',
-        height: '62px'
+        align: 'center'
       }}>
         <ExternalListLink to="https://www.github.com/caiusb">
           <i className="fa fa-github-square"></i>
@@ -132,6 +116,12 @@ const Header = () => (
           <i className="fa fa-envelope-square"></i>
         </ExternalListLink>
       </ul>
+    </div>
+    <div style={{
+      maxWidth: '960px',
+      verticalAlign: 'middle',
+      margin: '0 auto'
+    }}>
     </div>
   </div>
 )
