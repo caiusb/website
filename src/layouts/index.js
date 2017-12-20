@@ -64,6 +64,7 @@ const Header = () => (
           <i className="fa fa-envelope-square"></i>
         </ExternalListLink>
       </ul>
+      <hr className={styles.divider} />
     </div>
   </div>
 )
