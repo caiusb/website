@@ -4,7 +4,7 @@ import common from './common.module.css'
 
 const ProjectsPage = () => (
   <div>
-    <h1>Stuff I built and/or contributed to</h1>
+    <h1>Stuff I built</h1>
 
     <ul>
       <li>
@@ -22,9 +22,6 @@ const ProjectsPage = () => (
           tool. It makes it easy to get and AST difference between to Java
           files.
         </p>
-      </li>
-      <li>
-        <h3></h3>
       </li>
     </ul>
   </div>
