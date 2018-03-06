@@ -7,6 +7,7 @@
     "font-awesome": "^4.7.0",
     "gatsby": "^1.9.127",
     "gatsby-link": "^1.6.30",
+    "gatsby-plugin-google-analytics": "^1.0.20",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "typography": "^0.16.6"
   },
