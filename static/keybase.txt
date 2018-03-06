@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/caiusb
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://caius.brindescu.com
+  * I am caiusb (https://keybase.io/caiusb) on keybase.
+  * I have a public key with fingerprint BEE8 3841 166F 4FF0 9FC9  8B87 1CC3 946F BC77 9040
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101bd862de2cbb6329bf6675ed11978dff6a82e4c60609010c3d654c8b21afa674f0a",
+            "fingerprint": "bee83841166f4ff09fc98b871cc3946fbc779040",
+            "host": "keybase.io",
+            "key_id": "1cc3946fbc779040",
+            "kid": "0101bd862de2cbb6329bf6675ed11978dff6a82e4c60609010c3d654c8b21afa674f0a",
+            "uid": "aa48a5a77849fe4371f8569e0f523219",
+            "username": "caiusb"
+        },
+        "service": {
+            "hostname": "caius.brindescu.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1476040068,
+    "expire_in": 157680000,
+    "prev": "720acf34bcc961e6b31b31278b5c40dfb7e0d6794fc966b0f9dd1acf8863efc3",
+    "seqno": 10,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMIsAnicrZJ7SBRBHMfvrBRPykSLoIRai8JEdnb3ZmePBP2jsCz6o4di1rUzO2Pb
+5e21u+eD0yiI0uihRv9FSZoJ/eMVQaWERVZmUUT2MIgKInrSA+kBPWaloD/6s2Fg
+mJnv9zO/+c5cnjzBF/AH3lVV5j1pKfUPXzwc95V/O7QzIWDLaBBCCSFCxwe6xaCO
+G46YhhASRCACbCAoGVQiGENZ0jCDUA1SAwBNRQZjUEcSVQgUoahxOZENGFQIwhLQ
+mQ5VhYm6UCAwM1pN7ZhtRl2OxZQiGSkAQMgUxkSNEQ1hpAJCZE2BDBNV1URF5MZN
+luM5eHFYd2ihafE1PgmPl/cP/X+uOz6O03UF6UFdVZGiMarIKmAoCDUqsqAkS0Dz
+hA61o3oN5Wqim3EHC00FAl+rNQn1YvXu8fd+IeZZ8KRJvJBYNRwQsy3XItYWLtjk
+urGQ53cbYp6hjuLwb1QYcxfPkhtqqe2YVlQIAa4krumxgaJCnoMIUYFA62OmTcOm
+pwiqEIm8ecfQWo5UJVEnTFYwIRoEFGIZ8C6pCAeJIhoMq1Q0oKop/GUgxCLTDANw
+B0JQpozIgne5rVGLsznU1as50zGro7obt6nQdGmgaqLPH/ClTkrxPpkvkD71z9dz
+WtN+Nl49lnXmZCgg3D6QlZ+a2TkoKffntS9+cDx373P/8tELHcKra49eFzdYobZ7
+826MnqLFCXF+JOeO0mEn37v+0mc5G5t9qHF0m6buO536ueziovbG9Cm7Mz98nVl0
+ODKh7E3frNYNuSVFa+p2VrzM7bhrDz0emjbleevanr4l2Xe6Ek3Vbb6em8OzRs5n
+Dt+aMSPj+tDcyoqac4O7RvpX3XqakswrXZ3MuHJ04tL6h3PKt3+pfzlSdKR/2Y43
+J3Ynu3oPdtc5aU7J9LH1vdmRwf6Gs4W3QfqT458SW5PZ4HvnupuhBWMr9q/sbM25
+njvWPPDjgdb9tmhhPP9ry8fmzTOXvZi9p/cX4+tB+A==
+=5dUJ
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/caiusb
+
+==================================================================
