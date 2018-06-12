@@ -17,7 +17,7 @@ const IndexPage = () => (
       </p>
       <p>
       I am part of the <a href="http://eecs.oregonstate.edu/node/268">Software Engineering, Usability, and Programming Languages group</a>.
-      I work with <a href="http://eecs.oregonstate.edu/people/jensen-carlos">Carlos Jensen</a> and <a href="http://eecs.oregonstate.edu/people/sarma-anita">Anita Sarma</a>
+      I work with <a href="http://eecs.oregonstate.edu/people/jensen-carlos">Carlos Jensen</a> and <a href="http://eecs.oregonstate.edu/people/sarma-anita">Anita Sarma</a>.
       </p>
       <p>
       My CV is available <a href="CV-CaiusBrindescu.pdf">here</a>.
