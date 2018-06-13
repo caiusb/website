@@ -9,15 +9,14 @@ const IndexPage = () => (
       <img className={styles.avatar} src="/pics/me_niagara_falls.jpeg" />
 
       <p>
-      I am a PhD Candidate at <a href="http://eecs.oregonstate.edu">Oregon State University</a>.
-      I am originaly from <a href="http://en.wikipedia.org/wiki/Timisoara">Timisoara, Romania</a>.
-      I did my B.Sc. in Computer and Information Technology at the "Politehnica" University of Timisoara.
-      My advisor was <a href="http://bigfoot.cs.upt.ro/~radum/">Radu Marinescu</a>.
-      My area of interest is Software Engineering with an accent on Software Evolution and Version Control.
+      I am a Ph.D. Candidate at <a href="http://eecs.oregonstate.edu">Oregon State University</a>.
+      Originally from <a href="http://en.wikipedia.org/wiki/Timisoara">Timisoara, Romania</a>, I did my B.Sc. in Computer and Information Technology at the <a href="https://www.upt.ro">"Politehnica" University of Timisoara</a>, under the guidance of <a href="http://bigfoot.cs.upt.ro/~radum/">Radu Marinescu</a>.
+      My research interests include Software Engineering, Refactorings, Program Transformations, Program Analysis and Developer Processes.
+      I aim to make developers' lives easier by building tools that better suit their needs.
       </p>
       <p>
       I am part of the <a href="http://eecs.oregonstate.edu/node/268">Software Engineering, Usability, and Programming Languages group</a>.
-      I work with <a href="http://eecs.oregonstate.edu/people/jensen-carlos">Carlos Jensen</a> and <a href="http://eecs.oregonstate.edu/people/sarma-anita">Anita Sarma</a>.
+      I am currently advised by <a href="http://eecs.oregonstate.edu/people/jensen-carlos">Carlos Jensen</a> and <a href="http://eecs.oregonstate.edu/people/sarma-anita">Anita Sarma</a>.
       </p>
       <p>
       My CV is available <a href="CV-CaiusBrindescu.pdf">here</a>.
