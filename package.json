@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "caius-brindescu-website",
+  "description": "Caius Brindescu's website",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Caius Brindescu <caius@brindescu.com>",
   "dependencies": {
     "font-awesome": "^4.7.0",
     "gatsby": "^1.9.270",
