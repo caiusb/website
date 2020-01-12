@@ -9,7 +9,7 @@ const IndexPage = () => (
       <img className={styles.avatar} src="/pics/me_niagara_falls.jpeg" />
 
       <p>
-      I am a Ph.D. Candidate at <a href="http://eecs.oregonstate.edu">Oregon State University</a>.
+      I am a software enginneer at <a href="https:/www.etleap.com">Etleap</a> and a Ph.D. Candidate at <a href="http://eecs.oregonstate.edu">Oregon State University</a>.
       Originally from <a href="http://en.wikipedia.org/wiki/Timisoara">Timisoara, Romania</a>, I did my B.Sc. in Computer and Information Technology at the <a href="https://www.upt.ro">"Politehnica" University of Timisoara</a>, under the guidance of <a href="http://bigfoot.cs.upt.ro/~radum/">Radu Marinescu</a>.
       My research interests include Software Engineering, Refactorings, Program Transformations, Program Analysis and Developer Processes.
       I aim to make developers' lives easier by building tools that better suit their needs.
