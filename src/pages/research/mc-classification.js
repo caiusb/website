@@ -87,7 +87,7 @@ const McClassification = () => (
         <tr><td>NO_AUTHORS</td><td>The number of authors involved in that particular merge</td></tr>
         <tr><td>LOC_DIFF</td><td>The difference between the two branches, in LOC, before the merge</td></tr>
         <tr><td>AST_DIFF</td><td>The difference between the two branches, in AST nodes, before the merge</td></tr>
-        <tr><td>MERGED_IN_MASTER</td><td>if the branch was merged into master</td></tr>
+        <tr><td>MERGED_IN_MASTER</td><td>True if the branch was merged into master</td></tr>
         <tr><td>TIME_SOLVED</td><td>The time of the resolution</td></tr>
         <tr><td>TIME_A</td><td>The timestamp of the last commit on one of the branches</td></tr>
         <tr><td>TIME_B</td><td>The timestamp of the last commit on the other branch</td></tr>
@@ -95,7 +95,7 @@ const McClassification = () => (
         <tr><td>NO_METHODS</td><td>The number of methods involved in a conflict</td></tr>
         <tr><td>NO_CLASSES</td><td>The number of classes involved in a conflict</td></tr>
         <tr><td>DIFF_NODES_A_TO_B</td><td>A set of node types involved in a conflict</td></tr>
-        <tr><td>IS_AST_CONFLICT</td><td>if the conflict happens at the AST level (concurrent modifications to the same AST node)</td></tr>
+        <tr><td>IS_AST_CONFLICT</td><td>True, if the conflict happens at the AST level (concurrent modifications to the same AST node)</td></tr>
         </tbody>
         </table>
     </div>
