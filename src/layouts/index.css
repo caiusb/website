@@ -39,11 +39,15 @@ template {
 }
 a {
   background-color: transparent;
+  color: black;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
 a:hover {
   outline-width: 0;
+}
+a:visited {
+  color: gray;
 }
 abbr[title] {
   border-bottom: none;
