@@ -45,7 +45,8 @@ const Header = () => (
       <ul className={styles.internalListLink}>
         <InternalListLink to="research">Research</InternalListLink>
         <InternalListLink to="projects">Projects</InternalListLink>
-        <InternalListLink to="cycling">Cycling</InternalListLink>
+        {/* <InternalListLink to="cycling">Cycling</InternalListLink> */}
+        <InternalListLink to="radio">Radio</InternalListLink>
         <InternalListLink to="blog">Blog</InternalListLink>
       </ul>
     </div>
@@ -75,7 +76,7 @@ const TemplateWrapper = ({ children }) => (
       title="Caius Brindescu"
       meta={[
         { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'caius, brindescu, oregon, state, university, computer, science, software, engineering' },
+        { name: 'keywords', content: 'caius, brindescu, oregon, state, university, computer, science, software, engineering, etl, etleap, java, redshift' },
       ]}
     />
     <Header />
