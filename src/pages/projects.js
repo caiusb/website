@@ -1,12 +1,16 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import common from './common.module.css'
 
 const ProjectsPage = () => (
   <div>
     <h1>Stuff I built</h1>
 
     <ul>
+      <li>
+        <h3><a href="https://github.com/caiusb/caiusb.github.io">This website <i className='fa fa-github-square'></i></a></h3>
+        <p>
+          A simple Gatsby website, nothing fancy.
+        </p>
+      </li>
       <li>
         <h3><a href="https://github.com/caiusb/JDTFacade">JDT Facade <i className='fa fa-github-square'></i></a></h3>
         <p>

@@ -12,7 +12,7 @@ const IndexPage = () => (
       I am a software enginneer at <a href="https:/www.etleap.com">Etleap</a>. I got my Ph.D. Degree at <a href="http://eecs.oregonstate.edu">Oregon State University,</a> under the mentorship for Dr. Anita Sarma and Dr. Carlos Jensen.
       Originally from <a href="http://en.wikipedia.org/wiki/Timisoara">Timisoara, Romania</a>, I did my B.Sc. in Computer and Information Technology at the <a href="https://www.upt.ro">"Politehnica" University of Timisoara</a>, under the guidance of <a href="http://bigfoot.cs.upt.ro/~radum/">Radu Marinescu</a>.
       My research focused on understanding where tools fail developers, with a focus on Merge Conflict Resolution.
-      More details can be found in my <a href="CaiusBrindescuPhDThesis.pdf">thesis,</a> and under on my <a href="/research">research page.</a>
+      More details can be found in my <a href="CaiusBrindescuPhDThesis.pdf">thesis,</a> and under on my <Link to="/research">research page.</Link>
       </p>
       <p>
       I have over 15 years experience using Java, and related technologies.
