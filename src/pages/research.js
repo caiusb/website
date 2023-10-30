@@ -1,9 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import common from './common.module.css'
+import Layout from '../components/layout'
 
 const ProjectsPage = () => (
-  <div>
+  <Layout>
     <h1>Research</h1>
 
     <h2>Research Statement</h2>
@@ -78,7 +77,7 @@ const ProjectsPage = () => (
         (<a href='/slides/slides-ICSE14.pdf'>Slides</a>)
       </li>
     </ul>
-  </div>
+  </Layout>
 )
 
 export default ProjectsPage

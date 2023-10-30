@@ -1,12 +1,13 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import styles from './index.module.css'
+import { Link } from 'gatsby'
+import Layout from '../components/layout'
+import * as styles from "./index.module.css"
 
 const IndexPage = () => (
-  <div>
+  <Layout>
     <h1>About me</h1>
     <div>
-      <img className={styles.avatar} src="/pics/me_niagara_falls.jpeg" />
+      <img class={styles.avatar} src="/pics/me_niagara_falls.jpeg" />
 
       <p>
       I am a software enginneer at <a href="https:/www.etleap.com">Etleap</a>. I got my Ph.D. Degree at <a href="http://eecs.oregonstate.edu">Oregon State University,</a> under the mentorship for Dr. Anita Sarma and Dr. Carlos Jensen.
@@ -24,7 +25,7 @@ const IndexPage = () => (
       My full CV is available <a href="CV-CaiusBrindescu.pdf">here</a>.
       </p>
     </div>
-  </div>
+  </Layout>
 )
 
 export default IndexPage

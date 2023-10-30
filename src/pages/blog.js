@@ -1,9 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import common from './common.module.css'
+import Layout from "../components/layout"
 
 const BlogPage = () => (
-  <div>
+  <Layout>
     <h1>Blog</h1>
 
     <h2>External Blog Posts</h2>
@@ -14,7 +13,7 @@ const BlogPage = () => (
     <br />
     December 2020, AWS Partner Network (APN): <a href="https://aws.amazon.com/blogs/apn/how-etleap-integrates-with-amazon-redshift-data-sharing-to-provide-isolation-of-etl-and-bi-workloads/">How Etleap Integrates with Amazon Redshift Data Sharing to Provide Isolation of ETL and BI Workloads</a>
 
-  </div>
+  </Layout>
 )
 
 export default BlogPage

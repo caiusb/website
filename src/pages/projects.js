@@ -1,7 +1,8 @@
 import React from 'react'
+import Layout from '../components/layout'
 
 const ProjectsPage = () => (
-  <div>
+  <Layout>
     <h1>Stuff I built</h1>
 
     <ul>
@@ -28,7 +29,7 @@ const ProjectsPage = () => (
         </p>
       </li>
     </ul>
-  </div>
+  </Layout>
 )
 
 export default ProjectsPage

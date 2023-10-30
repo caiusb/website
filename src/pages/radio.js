@@ -1,13 +1,12 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import common from './common.module.css'
+import Layout from '../components/layout'
 
 const RadioPage = () => (
-  <div>
+  <Layout>
     <h1>Radio</h1>
 
     <h2>Under Contruction</h2>
-  </div>
+  </Layout>
 )
 
 export default RadioPage
