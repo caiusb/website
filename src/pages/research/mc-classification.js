@@ -1,10 +1,9 @@
 import React from 'react'
-import Link from 'gatsby'
-import styles from '../index.module.css'
+import Layout from '../../components/layout'
 
 const McClassification = () => (
-    <div>
-        <h1>Do Merge Conflicts Affect Software Quality? An Empirical Study of their Frequency, Cause and Impact</h1>
+    <Layout>
+        <h1>An Empirical Investigation into Merge Conflicts and Their Effect on Software Quality</h1>
         <p> <a href="http://caius.brindescu.com">Caius Brindescu</a>, <a href="https://www.ics.uci.edu/~iftekha/">Iftekhar Ahmed</a>, <a href="https://engineering.oregonstate.edu/carlos-jensen">Carlos Jensen</a>, <a href="http://web.engr.oregonstate.edu/~sarmaa/">Anita Sarma</a>
         </p>
         <p>Merge conflicts are known to cause extra effort for developers, but little is known about the effect on the software. While some research has been done, many questions remain. To better understand merge conflicts and their impact we conducted an empirical study of the causes, frequency, and impact of merge conflicts, where impact is measured in terms of bug fixing commits associated with conflicts. We analyzed <a href="#corpus">143 open source projects</a> and found that for 75.23% of conflicts, a developer needs to reflect on the program logic to resolve conflicts, and that almost 1 in 5 merges cause conflicts. We also found code associated with a merge conflict to be twice as likely to have a bug, and code associated with semantic merge conflicts 26x more likely to have a bug.</p>
@@ -271,7 +270,7 @@ const McClassification = () => (
             </table>
         </div>
       </div>
-    </div>
+    </Layout>
 );
 
 export default McClassification;

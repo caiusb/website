@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
 
 const ProjectsPage = () => (
@@ -55,6 +56,7 @@ const ProjectsPage = () => (
 
         (<a href='/papers/AhmedBrindescuESEM2017.pdf'>Preprint</a>)
         (<a href='/slides/slides-ESEM17.pdf'>Slides</a>)
+        (<Link to='/research/mc-classification'>Companion Website</Link>)
       </li>
       <li>
         <i>Can Testedness be Effectively Measured?</i><br />
