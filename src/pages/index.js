@@ -7,7 +7,7 @@ const IndexPage = () => (
   <Layout>
     <h1>About me</h1>
     <div>
-      <img class={styles.avatar} src="/pics/me_niagara_falls.jpeg" />
+      <img class={styles.avatar} src="/pics/me_niagara_falls.jpeg" alt="Headshot"/>
 
       <p>
       I am a software enginneer at <a href="https:/www.etleap.com">Etleap</a>. I got my Ph.D. Degree at <a href="http://eecs.oregonstate.edu">Oregon State University,</a> under the mentorship for Dr. Anita Sarma and Dr. Carlos Jensen.
