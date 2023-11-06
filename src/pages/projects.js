@@ -3,11 +3,13 @@ import Layout from '../components/layout'
 
 const ProjectsPage = () => (
   <Layout>
-    <h1>Stuff I built</h1>
+    <h1>Projects</h1>
+
+    <h2>Software</h2>
 
     <ul>
       <li>
-        <h3><a href="https://github.com/caiusb/caiusb.github.io">This website <i className='fa fa-github-square'></i></a></h3>
+        <h3><a href="https://github.com/caiusb/website">This website <i className='fa fa-github-square'></i></a></h3>
         <p>
           A simple Gatsby website, nothing fancy.
         </p>
