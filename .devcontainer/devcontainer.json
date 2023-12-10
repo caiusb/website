@@ -1,0 +1,7 @@
+{
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "postCreateCommand": "npm install",
+    "forwardPorts": [8000, 9000]
+}
