@@ -38,7 +38,9 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
-        run: aws s3 ls s3://caius.brindescu.com/
+        run: |
+          aws sts get-caller-identity
+          aws s3 ls s3://caius.brindescu.com/
       # - name: Install AWS CLI
       #   run: apt install awscli
       # - name: Upload to S3
