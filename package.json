@@ -6,7 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "gatsby": "^5.12.4",
+    "gatsby": "^5.13.1",
     "gatsby-plugin-google-analytics": "^5.12.0",
     "gatsby-plugin-google-gtag": "^5.12.3",
     "gatsby-plugin-image": "^3.12.0",
