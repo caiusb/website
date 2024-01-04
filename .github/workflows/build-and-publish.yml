@@ -32,19 +32,11 @@ jobs:
         with:
           name: built-website
           path: public/
-      - name: List public folder
-        run: ls public/
-      - name: List S3 path
+      - name: Upload to S3 and invalidate Cloudfront distribution 
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
           AWS_EC2_METADATA_DISABLED: true
         run: |
-          aws sts get-caller-identity
-          aws s3 ls s3://caius.brindescu.com/
-      # - name: Install AWS CLI
-      #   run: apt install awscli
-      # - name: Upload to S3
-      #   run: aws s3 public s3://caius.brindescu.com/ --delete --dryrun
-      # - name: Invalidate CloudFront Cache
-      #   run: aws cloudfront create-invalidation --distribution-id E3PS86HUMZ47EU --paths '*'
+          aws s3 public/ s3://caius.brindescu.com/ --delete --dryrun
+          aws cloudfront create-invalidation --distribution-id E3PS86HUMZ47EU --paths '*'
