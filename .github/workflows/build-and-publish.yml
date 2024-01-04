@@ -38,5 +38,5 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
           AWS_EC2_METADATA_DISABLED: true
         run: |
-          aws s3 public/ s3://caius.brindescu.com/ --delete --dryrun
+          aws s3 sync public/ s3://caius.brindescu.com/ --delete --dryrun
           aws cloudfront create-invalidation --distribution-id E3PS86HUMZ47EU --paths '*'
