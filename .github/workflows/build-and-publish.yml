@@ -32,11 +32,11 @@ jobs:
         with:
           name: built-website
       - name: List public folder
+        run: ls
+      - name: List S3 path
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
-        run: ls public/
-      - name: List S3 path
         run: aws ls s3://caius.brindescu.com/
       # - name: Install AWS CLI
       #   run: apt install awscli
