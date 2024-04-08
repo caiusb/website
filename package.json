@@ -20,7 +20,7 @@
     "typography": "^0.16.24"
   },
   "devDependencies": {
-    "prettier": "^2.8.8"
+    "prettier": "^3.2.5"
   },
   "keywords": [
     "gatsby"
