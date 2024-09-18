@@ -26,7 +26,7 @@ const Header = () => (
           <InternalListLink to="/research">Research</InternalListLink>
           <InternalListLink to="/projects">Projects</InternalListLink>
           {/* <InternalListLink to="cycling">Cycling</InternalListLink> */}
-          <InternalListLink to="/radio">Radio</InternalListLink>
+          {/* <InternalListLink to="/radio">Radio</InternalListLink> */}
           <InternalListLink to="/blog">Blog</InternalListLink>
         </ul>
       </div>
@@ -34,9 +34,6 @@ const Header = () => (
         <ul className={styles.externalListLink}>
           <ExternalListLink to="https://www.github.com/caiusb">
             <i className="fa fa-github-square"></i>
-          </ExternalListLink>
-          <ExternalListLink to="https://www.twitter.com/caiusbrindescu">
-            <i className="fa fa-twitter-square"></i>
           </ExternalListLink>
           <ExternalListLink to="https://www.linkedin.com/in/caius-brindescu-b9060b153/">
             <i className="fa fa-linkedin-square"></i>
