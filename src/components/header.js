@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import * as styles from './index.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const ExternalListLink = props =>
   <li className={styles.socialIcons}>
@@ -33,13 +34,16 @@ const Header = () => (
       <div className={styles.socialIconsList}>
         <ul className={styles.externalListLink}>
           <ExternalListLink to="https://www.github.com/caiusb">
-            <i className="fa fa-github-square"></i>
+            <FontAwesomeIcon icon={["fa-brands", "fa-square-github"]} />
           </ExternalListLink>
-          <ExternalListLink to="https://www.linkedin.com/in/caius-brindescu-b9060b153/">
-            <i className="fa fa-linkedin-square"></i>
+          <ExternalListLink to="https://www.threads.net/@caiusbrindescu">
+           <FontAwesomeIcon icon={['fa-brands', 'fa-square-threads']} />
+          </ExternalListLink>
+          <ExternalListLink to="https://www.linkedin.com/in/caius-brindescu/">
+            <FontAwesomeIcon icon={['fa-brands', 'fa-linkedin']}/>
           </ExternalListLink>
           <ExternalListLink to="mailto:caius@brindescu.com">
-            <i className="fa fa-envelope-square"></i>
+            <FontAwesomeIcon icon={["fa-solid", "fa-square-envelope"]}/>
           </ExternalListLink>
         </ul> 
         <hr className={styles.divider} />

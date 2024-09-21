@@ -2,6 +2,11 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import * as styles from "./index.module.css"
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fab, fas)
 
 const IndexPage = () => (
   <Layout>
