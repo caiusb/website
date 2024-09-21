@@ -23,7 +23,7 @@ const IndexPage = () => (
       </p>
       <p>
       I have over 15 years experience using Java, and related technologies.
-      My current work focuses developing and maintaing Java a backend, and working with Hadoop, Spark, and managed AWS services.
+      My current work focuses developing and maintaing Java a backend, and working with Hadoop, Spark, Flink, and managed AWS services.
       I have experience in maintaing infrastructure as code with both Terraform and CloudFormation.
       Finally, I also have extensive experience in Scala, Python, Go, C, Bash, TypeScript and JavaScript.
       </p>
