@@ -12,7 +12,7 @@ const IndexPage = () => (
   <Layout>
     <h1>About me</h1>
     <div>
-      <img class={styles.avatar} src="/pics/me_niagara_falls.jpeg" alt="Headshot"/>
+      <img class={styles.avatar} src="/pics/headshot.jpg" alt="Headshot"/>
 
       <p>
       I am a software enginneer at <a href="https:/www.etleap.com">Etleap</a>. 
