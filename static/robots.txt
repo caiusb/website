@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: https://caius.brindescu.com/sitemap-0.xml 
+Sitemap: https://caius.brindescu.com/sitemap-index.xml 
