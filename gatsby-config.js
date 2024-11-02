@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Caius Brindescu's website`,
+    siteUrl: `https://caius.brindescu.com/`
   },
   plugins: [
     {
@@ -14,6 +15,7 @@ module.exports = {
           head: true
         },
       }
-    }
+    },
+    `gatsby-plugin-sitemap`
   ],
 }
