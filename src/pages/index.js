@@ -28,7 +28,7 @@ const IndexPage = () => (
       Finally, I also have extensive experience in Scala, Python, Go, C, Bash, TypeScript and JavaScript.
       </p>
       <p>
-      My full CV is available <a href="CV-CaiusBrindescu.pdf">here</a>, and my resume <a href="https://caius.notion.site/Caius-Brindescu-PhD-108fc0091f70495d8659ffbef25b8c4c?pvs=4">here</a>,
+      My full CV is available <a href="CV-CaiusBrindescu.pdf">here</a>, and my resume <a href="CaiusBrindescu-Resume.pdf">here</a>.
       </p>
     </div>
   </Layout>
