@@ -15,7 +15,7 @@ const IndexPage = () => (
       <img class={styles.avatar} src="/pics/headshot.jpg" alt="Headshot"/>
 
       <p>
-      I am a software enginneer at <a href="https:/www.etleap.com">Etleap</a>. 
+      I am a Principal Enginneer at <a href="https:/www.etleap.com">Etleap</a>. 
       I got my Ph.D. Degree at <a href="http://eecs.oregonstate.edu">Oregon State University,</a> under the mentorship for <a href="https://web.engr.oregonstate.edu/~sarmaa/">Dr. Anita Sarma</a> and <a href="https://educationalinnovation.ucsd.edu/about/jensen-bio.html">Dr. Carlos Jensen</a>. 
       Originally from <a href="http://en.wikipedia.org/wiki/Timisoara">Timisoara, Romania</a>, I did my B.Sc. in Computer and Information Technology at the <a href="https://www.upt.ro">"Politehnica" University of Timisoara</a>, under the guidance of <a href="https://staff.cs.upt.ro/~radum/">Radu Marinescu</a>.
       My research focused on understanding where tools fail developers, with a focus on Merge Conflict Resolution.
