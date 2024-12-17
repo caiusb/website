@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from "../components/layout"
+import * as styles from "../components/index.module.css"
 
 const BlogPage = function ({ data }) {
   const { posts } = data.blog;
@@ -10,12 +11,14 @@ const BlogPage = function ({ data }) {
       <h1>Blog</h1>
 
       {posts.map(post => (
-        <article key={post.id}>
+        <article class={styles.blogListContainer} key={post.id}>
           <small>{post.frontmatter.date}</small>
           <Link to={'.' + post.fields.slug}>
-            <h2>{post.frontmatter.title}</h2>
+            <h2 class={styles.blog}>{post.frontmatter.title}</h2>
           </Link>
-          <p>Tags: {post.frontmatter.tags.join(', ')}</p>
+          <p class={styles.tag}>{post.frontmatter.tags.map(tag => (
+            <span class={styles.tag}>{tag}</span>
+          ))}</p>
         </article>
       ))}
     </Layout>
