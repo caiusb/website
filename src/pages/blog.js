@@ -1,19 +1,45 @@
 import React from 'react'
+import { graphql, Link } from 'gatsby'
 import Layout from "../components/layout"
 
-const BlogPage = () => (
-  <Layout>
-    <h1>Blog</h1>
+const BlogPage = function ({ data }) {
+  const { posts } = data.blog;
 
-    <h2>External Blog Posts</h2>
+  return (
+    <Layout>
+      <h1>Blog</h1>
 
-    November 2022, AWS Big Data Blog: <a href="https://aws.amazon.com/blogs/big-data/how-etleap-and-amazon-redshift-serverless-optimize-costs-for-etl/">How Etleap and Amazon Redshift Serverless optimize costs for ETL</a>
-    <br />
-    November 2021, AWS Big Data Blog: <a href="https://aws.amazon.com/blogs/big-data/integrate-etleap-with-amazon-redshift-streaming-ingestion-preview-to-make-data-available-in-seconds/">Integrate Etleap with Amazon Redshift Streaming Ingestion (preview) to make data available in seconds</a>
-    <br />
-    December 2020, AWS Partner Network (APN): <a href="https://aws.amazon.com/blogs/apn/how-etleap-integrates-with-amazon-redshift-data-sharing-to-provide-isolation-of-etl-and-bi-workloads/">How Etleap Integrates with Amazon Redshift Data Sharing to Provide Isolation of ETL and BI Workloads</a>
-
-  </Layout>
-)
+      {posts.map(post => (
+        <article key={post.id}>
+          <small>{post.frontmatter.date}</small>
+          <Link to={'.' + post.fields.slug}>
+            <h2>{post.frontmatter.title}</h2>
+          </Link>
+          <p>Tags: {post.frontmatter.tags.join(', ')}</p>
+        </article>
+      ))}
+    </Layout>
+  );
+};
 
 export default BlogPage
+
+export const pageQuery = graphql` 
+ query BlogPosts {
+  blog: allMarkdownRemark(
+    sort: [{ frontmatter: { date: DESC } }]
+    ) {
+    posts: nodes {
+      frontmatter {
+        date(fromNow: true)
+        title
+        tags
+      }
+      fields {
+        slug
+      }
+      id
+    }
+  }
+ }
+`
