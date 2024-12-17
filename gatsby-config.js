@@ -16,6 +16,14 @@ module.exports = {
         },
       }
     },
-    `gatsby-plugin-sitemap`
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages/blog`,
+        name: `blog`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-sitemap`,
   ],
 }
