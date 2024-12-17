@@ -108,3 +108,23 @@ h3 a {
 h3 a:visited {
   color: black;
 }
+
+h2.blog {
+  margin-bottom: 0.5rem;
+}
+
+.blogListContainer {
+  margin-bottom: 1rem;
+}
+
+span.tag {
+  padding: 5px;
+  color: white;
+  background-color: gray;
+  border-radius: 7px;
+  margin-right: 5px;
+  font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 90%;
+  margin-bottom: 0.5rem;
+}
