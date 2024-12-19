@@ -36,6 +36,9 @@ const Header = () => (
           <ExternalListLink to="https://www.github.com/caiusb">
             <FontAwesomeIcon icon={["fa-brands", "fa-square-github"]} />
           </ExternalListLink>
+          <ExternalListLink to="https://bsky.app/profile/caiusbrind.bsky.social">
+            <FontAwesomeIcon icon={["fa-brands", "fa-square-bluesky"]} />
+          </ExternalListLink>
           <ExternalListLink to="https://www.threads.net/@caiusbrindescu">
            <FontAwesomeIcon icon={['fa-brands', 'fa-square-threads']} />
           </ExternalListLink>
