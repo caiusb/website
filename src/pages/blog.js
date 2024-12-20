@@ -13,7 +13,7 @@ const BlogPage = function ({ data }) {
       {posts.map(post => (
         <article class={styles.blogListContainer} key={post.id}>
           <small>{post.frontmatter.date}</small>
-          <Link to={'.' + post.fields.slug}>
+          <Link to={'./posts' + post.fields.slug}>
             <h2 class={styles.blog}>{post.frontmatter.title}</h2>
           </Link>
           <p class={styles.tag}>{post.frontmatter.tags.map(tag => (

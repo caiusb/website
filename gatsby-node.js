@@ -32,7 +32,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: 'blog' + node.fields.slug,
+      path: 'blog/posts' + node.fields.slug,
       component: require.resolve('./src/templates/blog-post.js'),
       context: {
         // Data passed to context is available
