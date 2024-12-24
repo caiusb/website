@@ -1,23 +1,4 @@
-.avatar {
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 250px;
-  float: left;
-}
-
-.active {
-  color: 'blue';
-}
-
-h2.blog {
-  margin-bottom: 0.5rem;
-}
-
-.blogListContainer {
-  margin-bottom: 1rem;
-}
-
-span.tag {
+.tag {
   padding: 5px;
   color: white;
   background-color: gray;

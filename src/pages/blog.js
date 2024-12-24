@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from "../components/layout"
-import * as styles from "../components/index.module.css"
+import * as styles from "./index.module.css"
 
 const BlogPage = function ({ data }) {
   const { posts } = data.blog;
