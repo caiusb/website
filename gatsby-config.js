@@ -23,7 +23,20 @@ module.exports = {
         name: `blog`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-highlight-code`,
+            options: {
+              terminal: "carbon",
+              theme: "dracula",
+            }
+          },
+        ],
+      },
+    },
     `gatsby-plugin-sitemap`,
   ],
 }

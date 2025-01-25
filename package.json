@@ -5,6 +5,7 @@
   "version": "1.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@deckdeckgo/highlight-code": "^3.6.0",
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
     "@fortawesome/free-brands-svg-icons": "^6.7.1",
     "@fortawesome/free-solid-svg-icons": "^6.7.1",
@@ -17,6 +18,7 @@
     "gatsby-plugin-react-helmet": "^6.13.1",
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-plugin-sitemap": "^6.13.1",
+    "gatsby-remark-highlight-code": "^3.3.0",
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-remark": "^6.14.0",
     "gatsby-transformer-sharp": "^5.13.1",
