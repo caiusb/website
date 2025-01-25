@@ -24,11 +24,11 @@ const Header = () => (
           <Link to="/">Caius Brindescu</Link>
         </h1>
         <ul className={styles.internalListLink}>
-          <InternalListLink to="/research">Research</InternalListLink>
+          <InternalListLink to="/blog">Blog</InternalListLink>
           <InternalListLink to="/projects">Projects</InternalListLink>
+          <InternalListLink to="/research">Research</InternalListLink>
           {/* <InternalListLink to="cycling">Cycling</InternalListLink> */}
           {/* <InternalListLink to="/radio">Radio</InternalListLink> */}
-          <InternalListLink to="/blog">Blog</InternalListLink>
         </ul>
       </div>
       <div className={styles.socialIconsList}>
