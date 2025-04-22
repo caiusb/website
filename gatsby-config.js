@@ -34,9 +34,16 @@ module.exports = {
               theme: "dracula",
             }
           },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 500
+            }
+          }
         ],
       },
     },
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-sharp`
   ],
 }
