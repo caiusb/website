@@ -32,6 +32,9 @@ const IndexPage = () => (
       <p>
       My full CV is available <a href="CV-CaiusBrindescu.pdf">here</a>, and my resume <a href="CaiusBrindescu-Resume.pdf">here</a>.
       </p>
+      <p>
+      If you'd like to send me an encrypted email, you can use <a href="caius-brindescu-com-gpg.txt">this GPG key</a>.
+      </p>
     </div>
   </Layout>
 )

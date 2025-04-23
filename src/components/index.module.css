@@ -23,6 +23,13 @@
   color: inherit;
   font-size: 22pt;
   text-decoration: none;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+}
+
+.socialIcons a:visited {
+  color: black;
 }
 
 .internalHeaderLink {
@@ -82,10 +89,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
-}
-
-.externalListLink a:visited {
-  color:black
 }
 
 .socialIconsList {
