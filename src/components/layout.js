@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './header'
 import Footer from './footer'
+import './fontawesome'
 
 import './index.css'
 import * as styles from './index.module.css'
