@@ -142,7 +142,7 @@ STORAGE_LOCATIONS = ((
 	NAME = 'etleap_iceberg_bucket'
 	STORAGE_PROVIDER = 'S3'
 	STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::123456789012:role/etleap-streaming-ingestion-snowflake'
-	STORAGE_BASE_URL = 's3://<bucket\_name>/iceberg'
+	STORAGE_BASE_URL = 's3://etleap-data-lake/iceberg'
 ))
 ALLOW_WRITES = FALSE;
 ```
