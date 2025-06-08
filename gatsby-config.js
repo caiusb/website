@@ -39,7 +39,8 @@ module.exports = {
             options: {
               maxWidth: 500
             }
-          }
+          },
+          `gatsby-remark-gifs`
         ],
       },
     },
