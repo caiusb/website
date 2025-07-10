@@ -4,6 +4,7 @@ import {
   faSquareBluesky,
   faSquareThreads,
   faLinkedin,
+  faInstagramSquare,
 } from '@fortawesome/free-brands-svg-icons'
 import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons'
 
@@ -12,5 +13,6 @@ library.add(
   faSquareBluesky,
   faSquareThreads,
   faLinkedin,
+  faInstagramSquare,
   faSquareEnvelope
 ) 

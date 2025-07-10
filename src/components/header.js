@@ -42,6 +42,9 @@ const Header = () => (
           <ExternalListLink to="https://www.threads.net/@caiusbrindescu">
            <FontAwesomeIcon icon={['fa-brands', 'fa-square-threads']} />
           </ExternalListLink>
+          <ExternalListLink to="https://www.instagram.com/caiusbrindescu/">
+            <FontAwesomeIcon icon={['fa-brands', 'fa-square-instagram']} />
+          </ExternalListLink>
           <ExternalListLink to="https://www.linkedin.com/in/caius-brindescu/">
             <FontAwesomeIcon icon={['fa-brands', 'fa-linkedin']}/>
           </ExternalListLink>
