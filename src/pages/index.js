@@ -17,7 +17,7 @@ const IndexPage = () => (
       </div>
 
       <p>
-      I am a Principal Enginneer at <a href="https:/www.etleap.com">Etleap</a>. 
+      I am a Principal Enginneer at <a href="https://www.etleap.com">Etleap</a>. 
       I got my Ph.D. Degree at <a href="http://eecs.oregonstate.edu">Oregon State University,</a> under the mentorship for <a href="https://web.engr.oregonstate.edu/~sarmaa/">Dr. Anita Sarma</a> and <a href="https://educationalinnovation.ucsd.edu/about/jensen-bio.html">Dr. Carlos Jensen</a>. 
       Originally from <a href="http://en.wikipedia.org/wiki/Timisoara">Timisoara, Romania</a>, I did my B.Sc. in Computer and Information Technology at the <a href="https://www.upt.ro">"Politehnica" University of Timisoara</a>, under the guidance of <a href="https://staff.cs.upt.ro/~radum/">Radu Marinescu</a>.
       My research focused on understanding where tools fail developers, with a focus on Merge Conflict Resolution.
@@ -33,7 +33,7 @@ const IndexPage = () => (
       My full CV is available <a href="CV-CaiusBrindescu.pdf">here</a>, and my resume <a href="CaiusBrindescu-Resume.pdf">here</a>.
       </p>
       <p>
-      If you'd like to send me an encrypted email, you can use <a href="caius-brindescu-com-gpg.txt">this GPG key</a>.
+      If you'd like to send me an encrypted email, you can use <a href="caius-brindescu-com-pgp.txt">this PGP key</a>.
       </p>
     </div>
   </Layout>
