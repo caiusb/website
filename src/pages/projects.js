@@ -6,6 +6,11 @@ const ProjectsPage = () => (
   <Layout>
     <h1>Projects</h1>
 
+    <h2>3D Printing</h2>
+    <p>
+      My 3D printing projects are freely available on <a href="https://www.printables.com/@CaiusBrindescu_29693">Printables</a>.
+    </p>
+
     <h2>Software</h2>
 
     <ul>
