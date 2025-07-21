@@ -26,6 +26,7 @@ const Header = () => (
         <ul className={styles.internalListLink}>
           <InternalListLink to="/blog">Blog</InternalListLink>
           <InternalListLink to="/projects">Projects</InternalListLink>
+          <InternalListLink to="/astrography">Astrography</InternalListLink>
           <InternalListLink to="/research">Research</InternalListLink>
           {/* <InternalListLink to="cycling">Cycling</InternalListLink> */}
           {/* <InternalListLink to="/radio">Radio</InternalListLink> */}
