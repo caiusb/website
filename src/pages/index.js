@@ -36,7 +36,7 @@ const IndexPage = () => (
         My partner is <a href="https://www.physicswithheather.com/">Heather Hill</a>.
       </p>
       <p>
-        If you'd like to send me an encrypted email, you can use <a href="caius-brindescu-com-pgp.txt">this PGP key</a>.
+        If you'd like to send me an encrypted email, you can use <a href="caius-brindescu-com-gpg.txt">this GPG key</a>.
       </p>
     </div>
   </Layout>
