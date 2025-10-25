@@ -7,6 +7,12 @@
         8000,
         9000
     ],
+    "remoteEnv": {
+        "SSH_AUTH_SOCK": "/tmp/ssh-agent.sock"
+    },
+    "mounts": [
+        "source=${localEnv:SSH_AUTH_SOCK},target=/tmp/ssh-agent.sock,type=bind,consistency=cached"
+    ],
     "customizations": {
         "vscode": {
             "extensions": [
