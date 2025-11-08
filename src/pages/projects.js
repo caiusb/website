@@ -32,7 +32,7 @@ const ProjectsPage = () => (
         <h3><a href="https://github.com/caiusb/gumtree-facade">GumTree facade <FontAwesomeIcon icon={["fa-brands", "fa-square-github"]} /></a></h3>
         <p>
           A Scala Facade build around the <a href="https://github.com/GumTreeDiff/gumtree">GumTree</a> diff
-          tool. It makes it easy to get and AST difference between to Java
+          tool. It makes it easy to get an AST tree difference between to Java
           files.
         </p>
       </li>

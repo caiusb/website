@@ -5,7 +5,7 @@ const RadioPage = () => (
   <Layout>
     <h1>Amateur Radio</h1>
 
-    <h2>Under Contruction</h2>
+    <h2>Under Construction</h2>
   </Layout>
 )
 
