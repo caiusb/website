@@ -25,27 +25,37 @@ const ProjectsPage = () => (
       <li>
         <i>Using Relative Lines of Code to Guide Automated Test Generation for Python</i><br />
         Josie Holmes, Iftekhar Ahmed, <i>Caius Brindescu</i>, Rahul Gopinath, He Zhang, Alex Groce<br />
-        ACM Transactions on Software Engineering (TOSEM), Volume 29, Issue 4.
+        ACM Transactions on Software Engineering (TOSEM), Volume 29, Issue 4.<br />
+
+        (<a href='https://doi.org/10.1145/3408896'>DOI</a>)
       </li>
       <li>
         <i>Lifting the Curtain on Merge Conflict Resolution: A Sensemaking Perspective</i><br />
         <i>Caius Brindescu</i>, Yenifer Ramirez, Anita Sarma, Carlos Jensen<br />
-        ICSME 2020: 36th IEEE International Conference on Software Maintenance and Evolution
+        ICSME 2020: 36th IEEE International Conference on Software Maintenance and Evolution<br />
+
+        (<a href='https://doi.org/10.1109/ICSME46990.2020.00057'>DOI</a>)
       </li>
       <li>
         <i>Planning for untangling: Predicting the Difficulty of Merge Conflicts</i><br />
         <i>Caius Brindescu</i>, Iftekhar Ahmed, Rafael Leano, Anita Sarma<br />
-        ICSE 2020, The 42nd International Conference on Software Engineering 
+        ICSE 2020, The 42nd International Conference on Software Engineering<br />
+
+        (<a href='https://doi.org/10.1145/3377811.3380344'>DOI</a>)
       </li>
       <li>
         <i>An Empirical Investigation into Merge Conflicts and Their Effect on Software Quality</i><br />
         <i>Caius Brindescu</i>, Iftekhar Ahmed, Carlos Jensen, Anita Sarma<br />
-        Empirical Software Engineering, Volume 25, Issue 1
+        Empirical Software Engineering, Volume 25, Issue 1<br />
+
+        (<a href='https://doi.org/10.1007/s10664-019-09735-4'>DOI</a>)
       </li>
       <li>
         <i>The Life-Cycle of Merge Conflicts: Processes, Barriers, and Strategies</i><br />
         Nicholas Nelson, <i>Caius Brindescu</i>, Shane McKee, Anita Sarma, Danny Dig <br />
-        Empirical Software Engineering, Volume 24, Issue 4.
+        Empirical Software Engineering, Volume 24, Issue 4.<br />
+
+        (<a href='https://doi.org/10.1007/s10664-018-9674-x'>DOI</a>)
       </li>
       <li>
         <i>An Empirical Examination of the Relationship Between Code Smells and Merge Conflicts</i><br />
@@ -54,6 +64,7 @@ const ProjectsPage = () => (
 
         ESEM 2017: 11th International Symposium on Empirical Software Engineering and Measurement<br />
 
+        (<a href='https://doi.org/10.1109/ESEM.2017.12'>DOI</a>)
         (<a href='/papers/AhmedBrindescuESEM2017.pdf'>Preprint</a>)
         (<a href='/slides/slides-ESEM17.pdf'>Slides</a>)
         (<Link to='/research/mc-classification'>Companion Website</Link>)
@@ -65,6 +76,7 @@ const ProjectsPage = () => (
 
         FSE 2016: The 24th ACM SIGSOFT International Symposium on the Foundations of Software Engineering<br />
 
+        (<a href='https://doi.org/10.1145/2950290.2950324'>DOI</a>)
         (<a href='/papers/AhmedFSE2016.pdf'>Preprint</a>)
       </li>
       <li>
@@ -73,7 +85,7 @@ const ProjectsPage = () => (
         <i>Caius Brindescu</i>, Mihai Codoban, Sergii Shmarkatiuk, Danny Dig<br />
 
         ICSE 2014: 36th International Conference on Software Engineering <br />
-
+        (<a href='https://doi.org/10.1145/2568225.2568322'>DOI</a>)
         (<a href='/papers/BrindescuICSE2014.pdf'>Preprint</a>)
         (<a href='http://hdl.handle.net/1957/44927'>Tech Report</a>)
         (<a href='/slides/slides-ICSE14.pdf'>Slides</a>)
