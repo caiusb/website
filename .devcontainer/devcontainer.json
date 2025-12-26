@@ -11,7 +11,7 @@
         "SSH_AUTH_SOCK": "/tmp/ssh-agent.sock"
     },
     "mounts": [
-        "source=${localEnv:SSH_AUTH_SOCK},target=/tmp/ssh-agent.sock,type=bind,consistency=cached"
+        "source=${localEnv:SSH_AUTH_SOCK:/dev/null},target=/tmp/ssh-agent.sock,type=bind,consistency=cached"
     ],
     "customizations": {
         "vscode": {
