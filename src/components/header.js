@@ -21,14 +21,13 @@ const Header = () => (
     <div style={{marginBottom: '1.45rem'}}>
       <div className={styles.header}>
         <h1>
-          <Link to="/">Caius Brindescu</Link>
+          <Link to="/">Caius Brindescu, PhD</Link>
         </h1>
         <ul className={styles.internalListLink}>
           <InternalListLink to="/blog">Blog</InternalListLink>
           <InternalListLink to="/projects">Projects</InternalListLink>
           <InternalListLink to="/astrography">Astrography</InternalListLink>
           <InternalListLink to="/research">Research</InternalListLink>
-          {/* <InternalListLink to="cycling">Cycling</InternalListLink> */}
           {/* <InternalListLink to="/radio">Radio</InternalListLink> */}
         </ul>
       </div>

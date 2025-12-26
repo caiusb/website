@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Caius Brindescu's website`,
+    title: `Caius Brindescu, PhD`,
     siteUrl: `https://caius.brindescu.com/`
   },
   plugins: [

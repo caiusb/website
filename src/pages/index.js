@@ -10,10 +10,10 @@ library.add(fab, fas)
 
 export const Head = () => (
   <>
-    <title>Caius Brindescu - Principal Engineer</title>
-    <meta name="description" content="Caius Brindescu — Principal Engineer. Backend systems, big data, and infrastructure-as-code. PhD in software engineering." />
+    <title>Caius Brindescu, PhD - Principal Engineer</title>
+    <meta name="description" content="Caius Brindescu, PhD — Principal Engineer. Backend systems, big data, and infrastructure-as-code. PhD in software engineering." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:title" content="Caius Brindescu - Principal Engineer" />
+    <meta property="og:title" content="Caius Brindescu, PhD - Principal Engineer" />
     <meta property="og:description" content="Principal Engineer. Backend systems, big data, and infra-as-code." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/pics/headshot.jpg" />
