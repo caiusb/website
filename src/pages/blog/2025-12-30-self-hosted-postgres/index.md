@@ -6,18 +6,18 @@ tags: [Kubernetes, Self-Hosting]
 
 # Introduction 
 
-I would like to self-host a few services, and they require persistence, in the form of a PostgreSQL database.
+I would like to selfhost a few services, and they require persistence, in the form of a PostgreSQL database.
 Since my Kubernetes cluster runs on 4 Raspberry Pi 4, each with an SD card for disk, it's only a matter of time until one them gets corrupted.
-So I'll need some form of easy automated backups, idealy with Point-In-Time Recovery (PITR).
+To avoid the innevitable and predictable data loss, I'll need automated backups, idealy with Point-In-Time Recovery (PITR).
 
-If I'm going to reinventin the wheel, why not go for the whole wheel? 
+If I'm going to reinvent the wheel, why not go for the whole wheel? 
 
 # Solution
 
 [CloudNativePG](https://cloudnative-pg.io/documentation/current/) seems to be most mature and feature complete out there. 
 It provides an operator that does a lot of the heavy lifting.
-Backups are handled by a the [Barman Cloud](https://cloudnative-pg.io/plugin-barman-cloud/) plugin.
-It handles aspects like WAL Log archiving, taking regular snapshots and uploading them a cloud object storage, like S3.
+Backups are handled by the [Barman Cloud](https://cloudnative-pg.io/plugin-barman-cloud/) plugin.
+It handles aspects like WAL Log archiving, taking regular snapshots and uploading them a cloud object storage, like S3[^1].
 Seems to meet all the needs I need for my project.
 
 # Setup
@@ -77,7 +77,7 @@ kubectl port-forward -n cnpg-system service/test-restore-rw 5432:5432
 Now, we can configure backups for our new Postgres cluster.
 
 First, let's install the prerequisites that the Barman Cloud plugin requires.
-We will need to install Certificate Manager[^1].
+We will need to install Certificate Manager[^2].
 
 ```bash
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.19.2/cert-manager.yaml
@@ -92,9 +92,9 @@ kubectl apply -f https://github.com/cloudnative-pg/plugin-barman-cloud/releases/
 ### Configuration
 
 We can now define the backup configuration.
-For this example, I'll use S3 as the storage target for the backups in this example, as I already have AWS setup. 
+For this example, I'll use S3 as the storage target for the backups. 
 
-First, we'll need to store a set AWS credentials with access to the right bucket[^2].
+First, we'll need to store a set AWS credentials with access to the right bucket[^3].
 We'll use an [Opaque Secret](https://kubernetes.io/docs/concepts/configuration/secret/#secret-types) to store the access and secret keys:
 
 ```yaml
@@ -199,7 +199,8 @@ $ aws s3 ls s3://brindescu-backups/postgres/test/wals/0000000100000000/
 ...
 ```
 
-So we should have all the pieces needed to run a restore.
+So we should have all the pieces needed to perform a PITR.
+We'll tacke this in the next section.
 
 ## Restoring
 
@@ -229,7 +230,8 @@ test=> select * from test;
 
 We'll restore the table to 2025-12-27, at 20:43:00 UTC.
 For this, we'll create a new cluster, and we'll point it at the backups we have.
-We'll also gives it the target time we want the cluster restored to:
+We'll also need to give it the target time we want the cluster restored to.
+We arrive at this configuration:
 
 ```yaml
 apiVersion: postgresql.cnpg.io/v1
@@ -269,7 +271,7 @@ test=> select * from test;
 (5 rows)
 ```
 
-As we'd expect, we're missing row with `id` 21, as it's after the target restore time. 
+As we'd expect, we're missing row with `id` 21, as it's *after* the target restore time. 
 
 # Conclusions and Final Remarks
 
@@ -278,7 +280,7 @@ The true test is once this sees some "production" loads, and testing with an act
 
 ## A note on S3 cots
 
-For this example, I use S3 as the backup target destination.
+For this example, I used S3 as the backup target destination.
 The amount of data stored is small, however, WAL archiving could end up writing a lot of objects.
 This could incur significant S3 API charges, so it's something I'm keeping an eye on.
 With hourly base backups, I didn't see any cost increases for my AWS account.
@@ -294,5 +296,12 @@ This will give me a one week recovery window.
 Using the Barman retention policy will cause the plugin to list S3, and then delete the objects.
 This also will incur some S3 API charges, and I think that using the S3 lifecycle rule is probably good enough.
 
-[^1]: You can skip this step if your cluster already has it installed on the cluster. My "test" cluster did not.  
-[^2]: For reference, I granted the user full access to the S3 bucket where the backups are stored.
+[^1]: 
+The plugin also [supports Google Cloud Storage, or Azure Blobs or some other services that implementation a compatible API](https://cloudnative-pg.io/plugin-barman-cloud/docs/object_stores/).
+
+[^2]: 
+You can skip this step if your cluster already has it installed on the cluster. 
+My test cluster did not.
+
+[^3]: 
+For reference, I granted the user full access to the S3 bucket where the backups are stored.
