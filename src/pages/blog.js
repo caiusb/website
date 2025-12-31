@@ -34,7 +34,7 @@ export const pageQuery = graphql`
     ) {
     posts: nodes {
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM D, YYYY")
         title
         tags
       }
