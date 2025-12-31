@@ -16,16 +16,16 @@ If I'm going to reinventin the wheel, why not go for the whole wheel?
 
 [CloudNativePG](https://cloudnative-pg.io/documentation/current/) seems to be most mature and feature complete out there. 
 It provides an operator that does a lot of the heavy lifting.
-Backups are handled by a plugin using something called [Barman Cloud](https://cloudnative-pg.io/plugin-barman-cloud/).
-It handles things like WAL Log archiving, and regular snapshots and things like uploading to S3.
-Seems to meet all the needs I need.
+Backups are handled by a the [Barman Cloud](https://cloudnative-pg.io/plugin-barman-cloud/) plugin.
+It handles aspects like WAL Log archiving, taking regular snapshots and uploading them a cloud object storage, like S3.
+Seems to meet all the needs I need for my project.
 
 # Setup
 
 ## Setting up a Cloud Native PG database
 
 Using the [instructions on their website](https://cloudnative-pg.io/docs/1.28/installation_upgrade), we'll need to install the operator.
-We can do it with the following:
+We can do it with the following command:
 
 ```bash
 kubectl apply --server-side -f https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/release-1.28/releases/cnpg-1.28.0.yaml
@@ -33,13 +33,13 @@ kubectl apply --server-side -f https://raw.githubusercontent.com/cloudnative-pg/
 
 We can now create our database.
 The Barman Cloud Plugin we'll be using later assumes that the DB is in the `cnpg-system` namespace.
-To simply this setup, we'll work with that assumption by first creating the namespace:
+To simply this experiment, we'll work with that assumption, and we'll start by creating the namespace:
 
 ```bash
 kubectl create namespace cnpg-system
 ```
 
-Then we can define our DB configuration, with one user so we can connect to it later: 
+Then we can define our cluster configuration, with one user so we can connect to it later: 
 
 ```yaml
 apiVersion: v1
@@ -74,10 +74,10 @@ kubectl port-forward -n cnpg-system service/test-restore-rw 5432:5432
 
 ### Installing
 
-Now, we can configure backups for our "cluster". 
+Now, we can configure backups for our new Postgres cluster.
 
 First, let's install the prerequisites that the Barman Cloud plugin requires.
-First, we need to install Certificate Manager (you can skip this step if your cluster already has it installed. My "test" cluster did not).
+We will need to install Certificate Manager[^1].
 
 ```bash
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.19.2/cert-manager.yaml
@@ -91,10 +91,10 @@ kubectl apply -f https://github.com/cloudnative-pg/plugin-barman-cloud/releases/
 
 ### Configuration
 
-Now, let's define the backup configuration.
+We can now define the backup configuration.
 For this example, I'll use S3 as the storage target for the backups in this example, as I already have AWS setup. 
 
-First, we'll need to store some AWS credentials.
+First, we'll need to store a set AWS credentials with access to the right bucket[^2].
 We'll use an [Opaque Secret](https://kubernetes.io/docs/concepts/configuration/secret/#secret-types) to store the access and secret keys:
 
 ```yaml
@@ -131,8 +131,8 @@ spec:
       compression: gzip
 ```
 
-Finally, we'll need to tell our postgres "deployment" to use this configuration.
-We'll add the following to the Cluster `spec` so we can enable WAL archiving:
+Finally, we'll need to tell our Postgres cluster to use this configuration, and enable WAL archiving.
+We'll add the following to the Cluster `spec` field:
 
 ```yaml
 plugins:
@@ -143,7 +143,7 @@ plugins:
 ```
 
 The final piece of the puzzle is setup regular "base" backups.
-These will backup the entire dataset, and give us a "base" for the WAL logs to be applied to in order to get our Point-In-Time restore.
+These will backup the entire dataset, and give us a "base" for the WAL logs to be applied to in order to get our Point-In-Time Restore.
 
 ```yaml
 apiVersion: postgresql.cnpg.io/v1
@@ -280,8 +280,8 @@ The true test is once this sees some "production" loads, and testing with an act
 
 For this example, I use S3 as the backup target destination.
 The amount of data stored is small, however, WAL archiving could end up writing a lot of objects.
-This could incur significant S3 API charges, so it's something I'd like to keep an eye on.
-For the record, with hourly base backups, I didn't see any cost increases for my AWS account.
+This could incur significant S3 API charges, so it's something I'm keeping an eye on.
+With hourly base backups, I didn't see any cost increases for my AWS account.
 But inserting 21 records, and deleting a few is not exactly a representative use case, but at least the "baseline" cost is not absurd. 
 
 ## Retention policies
@@ -293,3 +293,6 @@ This will give me a one week recovery window.
 
 Using the Barman retention policy will cause the plugin to list S3, and then delete the objects.
 This also will incur some S3 API charges, and I think that using the S3 lifecycle rule is probably good enough.
+
+[^1]: You can skip this step if your cluster already has it installed on the cluster. My "test" cluster did not.  
+[^2]: For reference, I granted the user full access to the S3 bucket where the backups are stored.
