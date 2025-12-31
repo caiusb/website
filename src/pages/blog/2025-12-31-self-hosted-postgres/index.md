@@ -1,7 +1,7 @@
 ---
 title: Self Hosted Postgres in Kubernetes with PITR Recovery
-date: 2025-12-30
-tags: [Kubernetes, Self-Hosting]
+date: 2025-12-31
+tags: [Kubernetes, Self-Hosting, PostgreSQL]
 ---
 
 # Introduction 
