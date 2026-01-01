@@ -7,6 +7,16 @@ import * as styles from "./index.module.css"
 import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
 deckDeckGoHighlightElement();
 
+export const Head = ({data}) => {
+  const post = data.markdownRemark;
+  return (
+    <>
+      <meta property="og:title" content={post.frontmatter.title} />
+      <meta property="og:url" content={"http://caius.brindescu.com/blog/posts" + post.fields.slug} />
+    </>
+  )
+}
+
 export default function BlogPost({data}) {
   const post = data.markdownRemark
 
@@ -32,6 +42,9 @@ export const query = graphql`
         title
         date(formatString: "MMMM Do, YYYY")
         tags
+      }
+      fields {
+        slug
       }
     }
   }
