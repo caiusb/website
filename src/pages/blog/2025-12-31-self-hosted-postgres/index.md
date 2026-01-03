@@ -187,7 +187,7 @@ $ aws s3 ls s3://<redacted>/postgres/test/base/
 And finally, we have our WAL logs archived:
 
 ```
-$ aws s3 ls s3://brindescu-backups/postgres/test/wals/0000000100000000/
+$ aws s3 ls s3://<redacted>/postgres/test/wals/0000000100000000/
 2025-12-26 21:00:02      16944 000000010000000000000013.gz
 2025-12-26 21:00:04        210 000000010000000000000014.00000028.backup.gz
 2025-12-26 21:00:03      16513 000000010000000000000014.gz
