@@ -13,6 +13,7 @@ export const Head = ({data}) => {
     <>
       <meta property="og:title" content={post.frontmatter.title} />
       <meta property="og:url" content={"http://caius.brindescu.com/blog/posts" + post.fields.slug} />
+      <meta name="fediverse:creator" content="@caius@pnw.zone" />
     </>
   )
 }
