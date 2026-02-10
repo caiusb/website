@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const ExternalListLink = props =>
   <li className={styles.socialIcons}>
-    <a href={props.to}>
+    <a rel="me" href={props.to}>
       {props.children}
     </a>
   </li>
@@ -38,6 +38,9 @@ const Header = () => (
           </ExternalListLink>
           <ExternalListLink to="https://bsky.app/profile/caius.brindescu.com">
             <FontAwesomeIcon icon={["fa-brands", "fa-square-bluesky"]} />
+          </ExternalListLink>
+          <ExternalListLink to="https://pnw.zone/@caius">
+            <FontAwesomeIcon icon={['fa-brands', 'fa-mastodon']} />
           </ExternalListLink>
           <ExternalListLink to="https://www.threads.net/@caiusbrindescu">
            <FontAwesomeIcon icon={['fa-brands', 'fa-square-threads']} />
