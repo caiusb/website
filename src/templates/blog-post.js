@@ -27,7 +27,7 @@ export default function BlogPost({data}) {
         <small>{post.frontmatter.date}</small>
         <h1>{post.frontmatter.title}</h1>
         <p>{post.frontmatter.tags.map(tag => (
-          <span class={styles.tag}>{tag}</span>
+          <span key={tag} className={styles.tag}>{tag}</span>
         ))}</p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
