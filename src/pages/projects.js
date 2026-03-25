@@ -6,20 +6,14 @@ const ProjectsPage = () => (
   <Layout>
     <h1>Projects</h1>
 
-    <h2>3D Printing</h2>
+    {/* <h2>3D Printing</h2>
     <p>
       My 3D printing projects are freely available on <a href="https://www.printables.com/@CaiusBrindescu_29693">Printables</a>.
-    </p>
+    </p> */}
 
     <h2>Software</h2>
 
     <ul>
-      <li>
-        <h3><a href="https://github.com/caiusb/website">This website <FontAwesomeIcon icon={["fa-brands", "fa-square-github"]} /></a></h3>
-        <p>
-          A simple Gatsby website, nothing fancy.
-        </p>
-      </li>
       <li>
         <h3><a href="https://github.com/caiusb/JDTFacade">JDT Facade <FontAwesomeIcon icon={["fa-brands", "fa-square-github"]} /></a></h3>
         <p>
