@@ -43,6 +43,9 @@ const IndexPage = () => (
         I also have extensive experience in Scala, Python, Go, C, Bash, TypeScript and JavaScript.
       </p>
       <p>
+        Outside of work, I tinker with amateur radio, astrophotography, self-hosting, 3D printing, and write about all if it <a href="https://caius.dev">here</a>.
+      </p>
+      <p>
         My full CV is available <a href="CV-CaiusBrindescu.pdf">here</a>, and my resume <a href="CaiusBrindescu-Resume.pdf">here</a>.
       </p>
     </div>

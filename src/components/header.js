@@ -27,8 +27,6 @@ const Header = () => (
           <InternalListLink to="/blog">Blog</InternalListLink>
           <InternalListLink to="/research">Research</InternalListLink>
           <InternalListLink to="/projects">Projects</InternalListLink>
-          {/* <InternalListLink to="/astrophotography">Astrophotography</InternalListLink> */}
-          {/* <InternalListLink to="/radio">Radio</InternalListLink> */}
         </ul>
       </div>
       <div className={styles.socialIconsList}>
