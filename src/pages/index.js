@@ -30,23 +30,26 @@ const IndexPage = () => (
       </div>
 
       <p>
-        I am a Principal Engineer at <a href="https://www.etleap.com">Etleap</a>.
+        I am a Software Engineer at <a href="https://hightouch.com/">Hightouch</a>.
+        Previously, I was a Principal Software Engineer at <a href="https://etleap.com/">Etleap</a>.
+      </p>
+      <p>
         I earned my Ph.D. at <a href="http://eecs.oregonstate.edu">Oregon State University,</a> under the mentorship of <a href="https://web.engr.oregonstate.edu/~sarmaa/">Dr. Anita Sarma</a> and <a href="https://educationalinnovation.ucsd.edu/about/jensen-bio.html">Dr. Carlos Jensen</a>.
         Originally from <a href="http://en.wikipedia.org/wiki/Timisoara">Timisoara, Romania</a>, I completed my B.Sc. in Computer and Information Technology at the <a href="https://www.upt.ro">"Politehnica" University of Timisoara</a>, under the guidance of <a href="https://staff.cs.upt.ro/~radum/">Radu Marinescu</a>.
         My research focused on understanding where tools fail developers, with a focus on Merge Conflict Resolution.
         More details can be found in my <a href="CaiusBrindescuPhDThesis.pdf">thesis,</a> and on my <Link to="/research">research page</Link>.
       </p>
       <p>
-        I have over 15 years of experience with Java and related technologies.
-        My current work focuses on developing and maintaining Java backends, working with Hadoop, Spark, Flink, and managed AWS services.
-        I have experience maintaining infrastructure as code with both Terraform and CloudFormation.
-        I also have extensive experience in Scala, Python, Go, C, Bash, TypeScript and JavaScript.
+        I have over 15 years of experience with Java, Typescript, AWS services and other technologies.
+        My current work focuses on developing and maintaining high performance services.
+        I have extensive experience maintaining infrastructure as code with both Terraform and CloudFormation.
+        I also have experience in Scala, Python, Go, C, Bash and JavaScript.
       </p>
       <p>
         Outside of work, I tinker with amateur radio, astrophotography, self-hosting, 3D printing, and write about all if it <a href="https://caius.dev">here</a>.
       </p>
       <p>
-        My full CV is available <a href="CV-CaiusBrindescu.pdf">here</a>, and my resume <a href="CaiusBrindescu-Resume.pdf">here</a>.
+        My full CV is available <a href="CaiusBrindescu-CV.pdf">here</a>, and my resume <a href="CaiusBrindescu-Resume.pdf">here</a>.
       </p>
     </div>
   </Layout>
